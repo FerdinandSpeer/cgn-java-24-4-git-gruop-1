@@ -10,15 +10,21 @@ public class Main {
         int sum = 0;
         int max = numbers[0];  // Initialize max with the smallest possible integer value
 
-        for (int i = 0; i < numbers.length; i++) {
-            sum += numbers[i];  // Accumulate the sum
-            System.out.println("Current sum: " + sum);
+        for (int numbre:numbers){
+            System.out.println(numbre);
+        }
 
+        for (int i=0;i<numbers.length;i++){
+            sum+=numbers[i];
+            System.out.println(sum);
+        }
+
+        for (int i = 0; i < numbers.length; i++) {
             // Update max if the current number is greater than the current max
             if (numbers[i] > max) {
                 max = numbers[i];
             }
-            System.out.println("Current max: " + max);
+//            System.out.println("Current max: " + max);
         }
 
         // Output the final results
